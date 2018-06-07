@@ -377,3 +377,189 @@ a.btn:focus{outline: 0;}
 .btn-skin:hover, .btn-skin:focus {color: #fff;background-color: #173E43;}
 .btn-toTop{height: 42px;width: 42px;padding: 7px 0 0;border: 2px solid #42AB9E;margin: 0;color: #42AB9E;}
 .btn-toTop:hover{background: #42AB9E;color: #fff;}
+
+/** custom **/
+footer#footer *, footer#footer *::before, footer#footer *::after {
+    box-sizing: border-box;
+}
+
+
+#footer .footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 35px;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+  font-family: "AdobeBlank";
+}
+
+#footer .footer-social li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 26px;
+}
+
+#footer .footer-social a {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: left;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+
+#footer .footer-social a:before, #footer .footer-social a:after {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transition: all ease 0.3s;
+}
+
+#footer .footer-social a:after {
+  opacity: 0;
+}
+
+#footer .footer-social a.linkedin:before, #footer .footer-social a.linkedin:after {
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+}
+
+#footer .footer-social a.linkedin:before {
+  background: url(../images/ico-linkedin-white-001.svg) no-repeat;
+  background-size: 40px 40px;
+}
+#footer .footer-social a.linkedin:after {
+  background: url(../images/ico-linkedin-orange-001.svg) no-repeat;
+  background-size: 40px 40px;
+}
+
+#footer .footer-social a.twitter:before, #footer .footer-social a.twitter:after {
+  width: 45px;
+  height: 38px;
+  margin: -19px 0 0 -22px;
+}
+
+#footer .footer-social a.twitter:before {
+  background: url(../images/ico-twitter-white-001.svg) no-repeat;
+  background-size: 45px 38px;
+}
+#footer .footer-social a.twitter:after {
+  background: url(../images/ico-twitter-orange-001.svg) no-repeat;
+  background-size: 45px 38px;
+}
+#footer .footer-social a.facebook:before, #footer .footer-social a.facebook:after {
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+}
+#footer .footer-social a.facebook:before {
+  background: url(../images/ico-facebook-white-001.svg) no-repeat;
+  background-size: 40px 40px;
+}
+
+#footer .footer-social a.facebook:after {
+  background: url(../images/ico-facebook-orange-001.svg) no-repeat;
+  background-size: 40px 40px;
+}
+#footer .footer-social a.glassdoor:before, #footer .footer-social a.glassdoor:after {
+  width: 28px;
+  height: 49px;
+  margin: -25px 0 0 -14px;
+}
+#footer .footer-social a.glassdoor:before {
+  background: url(../images/ico-glassdoor-white-001.svg) no-repeat;
+  background-size: 28px 49px;
+}
+
+#footer .footer-social a.glassdoor:after {
+  background: url(../images/ico-glassdoor-orange-001.svg) no-repeat;
+  background-size: 28px 49px;
+}
+#footer .footer-social a:hover:before {
+  opacity: 0;
+}
+
+#footer .footer-social a:hover:after {
+  opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  #footer .footer-social a {
+    width: 20px;
+    height: 20px;
+  }
+  #footer .footer-social a::before, #footer .footer-social a::after {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    background-size: contain !important;
+  }
+}
+
+#footer .copyright {
+  text-align: center;
+  color: #fff;
+  font-family: "gotham-book", Arial, sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+#footer .copyright a {
+  text-decoration: none;
+  color: #1da8de;
+}
+
+#footer .copyright a:hover {
+  color: #f4902d;
+}
+
+@media screen and (max-width: 1519px) {
+  #footer .footer-links li {
+    font-size: 12px;
+  }
+  #footer address {
+    font-size: 14px;
+  }
+  #footer .email-form .form-control {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #footer ul#menu-footer-navigation {
+    padding-top: 30px;
+  }
+  #footer h4 {
+    margin: 0 0 20px;
+  }
+  #footer .footer-links {
+    margin: 0;
+  }
+  #footer .footer-links li + li {
+    padding-top: 10px;
+  }
+  #footer .footer-social {
+    padding: 0 0 30px;
+    margin: 0 -20px;
+  }
+  #footer .footer-social li {
+    padding: 0 15px;
+  }
+}

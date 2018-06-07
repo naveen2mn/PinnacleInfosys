@@ -1,7 +1,7 @@
 	var marker;
 	  
     function initMap() {
-        var myLatLng = {lat: 39.79, lng: -86.14};
+        var myLatLng = {lat: 1.37, lng: 103.87};
 
 		// Specify features and elements to define styles.
         var styleArray = [
@@ -27,6 +27,7 @@
         ];
 		
         var map = new google.maps.Map(document.getElementById('map'), {
+            console.log(myLatLng)
           center: myLatLng,
           scrollwheel: false,
 		   // Apply the map style array to the map.
