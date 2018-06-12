@@ -576,3 +576,33 @@ footer#footer *, footer#footer *::before, footer#footer *::after {
 
 
 
+
+.box-container {
+    display: block;
+           background: white;
+    box-shadow: 0 0 7px 0 #000;
+    transition: 0.5s ease-out;
+        margin-bottom: 60px;
+}
+.box-container:hover{
+      transform: scale(1.05);
+    transition: 0.5s ease;
+    color: #0a0001;
+    background-color: #e8e8e8;
+}
+
+.cust-img {
+    position: relative;
+    box-shadow: 0 0 7px 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    width: 250px;
+    height: 70px;
+}
+
+.cust-des {
+        padding: 0 15px 15px;
+        text-align: justify;
+ 
+}
