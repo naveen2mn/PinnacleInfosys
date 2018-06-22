@@ -156,3 +156,31 @@
 			$("#result").slideUp();
 		});
 	}
+
+//$(".product-head").click(function () {
+//
+//    $header = $(this);
+//    //getting the next element
+//    $content = $header.next();
+//    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+//    $content.slideToggle(600, function () {
+//        //execute this after slideToggle is done
+//        //change text of header based on visibility of content div
+//        if($('.arr').hasClass('right-arrow')){
+//            $('.arr').removeClass('right-arrow')
+//            $('.arr').addClass('down-arrow')
+//                $('.product-head').css('borderRadius','5px 5px 0 0');
+//        }
+//        else{
+//            $('.arr').removeClass('down-arrow')
+//            $('.arr').addClass('right-arrow')
+//            $('.product-head').css('borderRadius','5px');
+//        }
+//        
+//        $header.text(function () {
+//            //change text based on condition
+//            //return $content.hasClass("right-arrow") ? "down-arrow" : "right-arrow";
+//        });
+//    });
+//
+//});
